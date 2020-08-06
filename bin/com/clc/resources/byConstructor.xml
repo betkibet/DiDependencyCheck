@@ -1,0 +1,14 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans> 
+	<bean id="c" class="com.clc.Car" autowire="byName">
+		<property name="carName" value="Toyota"></property>
+	</bean>
+	<bean id="engine" class="com.clc.Engine">
+		<property name="modelYear" value="2018"></property>
+	</bean>
+	<bean id="vSpeed" class="com.clc.Speed">
+		<property name="vSpeed" value="300 km/h"></property>
+		<property name="modelYear" value="10002"></property>
+	</bean>
+</beans>
